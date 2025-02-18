@@ -1,0 +1,55 @@
+/* Reset some defaults and set a background */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #faf8ef;
+  margin: 0;
+}
+
+.game-container {
+  text-align: center;
+}
+
+/* Board styling */
+.board {
+  width: 400px;
+  height: 400px;
+  background: #bbada0;
+  border-radius: 5px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  padding: 15px;
+}
+
+/* Tile styling */
+.tile {
+  width: 80px;
+  height: 80px;
+  background: #cdc1b4;
+  border-radius: 3px;
+  line-height: 80px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #776e65;
+}
+
+/* Example colors for tiles */
+.tile.n2  { background: #eee4da; }
+.tile.n4  { background: #ede0c8; }
+.tile.n8  { background: #f2b179; color: #f9f6f2; }
+.tile.n16 { background: #f59563; color: #f9f6f2; }
+.tile.n32 { background: #f67c5f; color: #f9f6f2; }
+.tile.n64 { background: #f65e3b; color: #f9f6f2; }
+.tile.n128{ background: #edcf72; color: #f9f6f2; }
+.tile.n256{ background: #edcc61; color: #f9f6f2; }
+.tile.n512{ background: #edc850; color: #f9f6f2; }
+.tile.n1024{ background: #edc53f; color: #f9f6f2; }
+.tile.n2048{ background: #edc22e; color: #f9f6f2; }
+/* Tiles beyond 2048 can be adjusted – your target is 4096 */
+.tile.n4096{ background: #3c3a32; color: #f9f6f2; }
